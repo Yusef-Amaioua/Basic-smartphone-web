@@ -1,0 +1,176 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+body {font-family: 'Newsreader', serif;}
+
+header {
+    display: flex;
+    background:#E1E8E8;
+    
+    
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.logo-container,
+.nav-links,
+.cart {
+    display: flex;
+}
+.logo-container {
+flex: 1;
+
+
+}
+.logito {
+   
+    margin-left: 20px;
+}
+
+
+.logo-container h4 {
+    color: #34495E;
+    font-size: 18px;
+    font-weight: 200;
+    margin-left: 60px;
+   
+    
+    
+}
+.logo {
+    font-weight: 400;
+    margin: 5px;
+    }
+nav {
+flex: 2;}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    color: #34495E;
+    text-decoration: none;
+    font-size: 18px;
+}
+.cart {
+   justify-content: flex-end;
+    flex: 1;
+    margin-right: 40px;
+}
+.presentation {
+    display: flex;
+    
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+   
+padding-left: 20px;
+    
+}
+.introduction {
+    
+    margin-bottom: 150px;
+}
+.intro-text {
+    margin-left: 30px;
+   
+}
+.intro-text h1 { 
+    font-size: 44px;
+    font-weight: 500;
+    color:  #34495E;}
+    .intro-text p {
+        margin-top: 5px;
+        font-size: 22px;
+        color:  #34495E;
+    }
+    
+.cta {
+ padding-left: 25%;
+    }
+    .cta-select {border: 2px solid  #34495E;
+    background: transparent;
+    color:  #34495E;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-add {
+    background:  #34495E;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin: 30px 0px 0px 30px;
+}
+.cover{
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+   
+}
+.cover img {
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+  
+   
+}
+
+.big-circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.7;
+    height: 80%;
+}
+.mid-circle {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    height: 60%;
+}
+.small-circle {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index:-1 ;
+    opacity: 4;
+}
+@media screen and (max-width: 1024px) {
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	
+	}
+	.cover img {
+		padding: 10px 0px 0px 0px;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
